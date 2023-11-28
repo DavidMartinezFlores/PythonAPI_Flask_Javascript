@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!---Author David Martinez Flores
+Se utiliza mucho contenido espanol e ingles no se a traducido completo
+-->
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/main.css">
+    </head>
+    <body>
+        <hr>
+        <center><img id="logoImg" src="/static/images/DAVIDMF1.PNG"/></center>
+        <hr>
+        <div id="emptyDiv">
+            <!--- ESTE DIV ALMACENARA LOS DATOS QUE SE GENERAN DESDE JAVASCRIPT (DATOS DEL USUARIO A CONSULTAR) --->
+        </div>
+        <!--DIV DE LAS COOKIES-->
+        <div id="cookies" >
+            <center>
+                <h2>Esta web ha sido creada por <span id="authorName"><u>David Martinez Flores</u></span> con un motivo teorico y de aprendizaje.
+                    <br>Esta web teorica te permite crear usuarios, cargar su informacion, modificarlos y borrarlos mediante un backend en python, más javascript y el propio html con css.
+                    <br>Todos los datos cargados en una bbdd de mysql.</h2>
+                    <h2>Haz click en el boton aceptar para hacer desaparecer este cuadro de texto</h2>
+                    <button id="acceptText" name="accept" onclick="hiddeCookies()">ACEPTAR</button>
+            </center>
+        </div>
+        <!--DIV PRINCIPAL DEL CENTRO-->
+        <div class="centerDiv">
+            <center>
+                <!-- FLECHAS DE IMAGEN -->
+                <div class="minSize">
+                    <img id="arrowOne" src="/static/images/giphy.gif" width="70px" height="70px"/>
+                </div>
+                <fieldset class="grayBackground">
+                    <h1 class="redColor ">REGISTRO DE USUARIOS</h1>
+                </fieldset>
+            </center>
+            <!--FORMULARIO DE REGISTRO DE USUARIOS-->
+            <fieldset class="whiteBackground">
+                <form id="userForm" >
+                    <label>Username <input type="text" name="username" required placeholder="Introduce nombre de usuario" size="33%"></label>
+                    <br>
+                    <br>
+                    <label>Password <input type="password" name="password" required placeholder="Introduce una clave" size="33%"></label>
+                    <br>
+                    <br>
+                    <label>Password <input type="password" name="password2" required placeholder="Introduce clave otra vez" size="33%"></label>
+                    <br>
+                    <br>
+                    <button name="submit" class="green">Registrar Usuario</button>
+                </form>
+                <button name="reset" class="red" onclick="resetForm()">Limpiar todo</button>
+            </fieldset>
+            <br>
+            <center>
+                <div class="minSize">
+                    <img id="arrowOne" src="/static/images/giphy.gif" width="70px" height="70px"/>
+                </div>
+                <fieldset class="grayBackground">
+                    <h1 class="redColor ">CONSULTAR USUARIO</h1>
+                </fieldset>
+            </center>
+            <!--FORMULARIO DE CONSULTA DE USUARIOS-->
+            <fieldset class="whiteBackground">
+                <form id="userFormQuery" >
+                    <label>Username <input type="text" name="username" required placeholder="Introduce nombre de usuario" size="33%"></label>
+                    <br>
+                    <br>
+                    <label>Password <input type="password" name="password" required placeholder="Introduce una clave" size="33%"></label>
+                    <br>
+                    <br>
+                    <button name="submit" class="green">Buscar usuario</button>
+                </form>
+                <button name="reset" class="red" onclick="resetForm2()">Limpiar todo</button>
+            </fieldset>
+            <br>
+                <center>
+                    <div class="minSize">
+                        <img id="arrowOne" src="/static/images/giphy.gif" width="70px" height="70px"/>
+                    </div>
+                    <fieldset class="grayBackground">
+                        <h1 class="redColor ">BORRAR USUARIOS</h1>
+                    </fieldset>
+                </center>
+                <!--FORMULARIO DE BORRADO DE USUARIO-->
+                <fieldset class="whiteBackground">
+                    <form id="userFormDelete" >
+                        <label>Id del Usuario <input type="text" name="id" required placeholder="Introduce ID de Usuario" size="33%"></label>
+                        <br>
+                        <br>
+                        <u><span style="color:red;font-size: 1rem;">*!Recuerda consultar la informacion del usuario para conocer su ID!*</span></u>
+                        <br>
+                        <br>
+                        <button name="submit" class="green">Borrar Usuario</button>
+                    </form>
+                    <button name="reset" class="red" onclick="resetForm3()">Limpiar todo</button>
+                </fieldset>
+                <br>
+                <center>
+                    <div class="minSize">
+                        <img id="arrowOne" src="/static/images/giphy.gif" width="70px" height="70px"/>
+                    </div>
+                    <fieldset class="grayBackground">
+                        <h1 class="redColor ">MODIFICAR USUARIO</h1>
+                    </fieldset>
+                </center>
+                <!--FORMULARIO DE MODIFICACION DE USUARIO-->
+                <fieldset class="whiteBackground">
+                    <form id="userFormModify" >
+                        <label>Old Username <input type="text" name="oldUsername" required placeholder="Introduce nombre de usuario" size="33%"></label>
+                        <br>
+                        <label>Old Password <input type="password" name="oldPassword" required placeholder="Introduce clave" size="33%"></label>
+                        <br>
+                        <label>Id del Usuario <input type="text" name="id" required placeholder="Introduce ID de Usuario" size="33%"></label>
+                        <br>
+                        <br>
+                        <label>New Username <input type="text" name="newUsername" required placeholder="Introduce nombre de usuario" size="33%"></label>
+                        <br>
+                        <label>New Password <input type="password" name="newPassword" required placeholder="Introduce clave" size="33%"></label>
+                        <br>
+                        <br>
+                        <button name="submit" class="green">Modificar usuario</button>
+                    </form>
+                    <button name="reset" class="red" onclick="resetForm4()">Limpiar todo</button>
+                </fieldset>
+        </div>
+        <hr>
+        <center><img id="logoImg" src="/static/images/DAVIDMF1.PNG"/></center>
+        <hr>
+        <!--LINKEO CON EL JAVASCRIPT , ES NECESARIO PONERLO AL FINAL DEL BODY PARA US CORRECTO FUNCIONAMIENTO-->
+        <script src="/static/javaScript.js"></script>
+    </body>
+</html>

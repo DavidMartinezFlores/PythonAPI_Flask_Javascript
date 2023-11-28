@@ -1,0 +1,108 @@
+/*
+Author David Martinez Flores
+Se utiliza mucho contenido espanol e ingles no se ha traducido completo
+Muchas de las instrucciones en este CSS se pueden unificar para ahorrar lineas , sin embargo se ha realizado asi para enfatizar la practica de reescribirlas
+*/
+
+/*CLAVES VALOR PARA EL BOBY*/
+body {
+    background-color: aqua;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-image: url("/static/images/fondo.jpg");
+    background-attachment: fixed;
+}
+
+/*CLAVES VALOR PARA EL DIV CENTRAL (CLASE)*/
+.centerDiv{
+    margin-left: 33.3%;
+    margin-right: 33.3%;
+    border-radius: 3%;
+    width: 33.3%;
+}
+
+/*CLAVE VALOR PARA UN FONDO GRIS (CLASE)*/
+.grayBackground{
+    background-color: rgb(206, 206, 206);
+}
+
+/*CLAVE VALOR PARA FUENTE ROJA Y ALGUNOS OTROS DATOS(LOS TITULOS)*/
+.redColor{
+    color: rgb(146, 34, 34);
+    background-color: aliceblue;
+    border-radius: 35%;
+}
+/*CLAVE VALOR PARA FONDO BLANCO HIELO*/
+.whiteBackground{
+    background-color: aliceblue;
+}
+/*CLAVE VALOR PARA LOS FIELDSET*/
+fieldset {
+    border-radius: 5%;
+    border-color: chocolate;
+}
+/*CLAVE VALOR PARA LOS BOTONES VERDES*/
+.green{
+    background-color: rgb(29, 165, 29);
+    font-weight: bold;
+    color: aliceblue;
+    background-origin: 5%;
+}
+/*CLAVE VALOR PARA LOS BOTONES ROJOS*/
+.red{
+    background-color:rgb(175, 27, 27);
+    font-weight: bold;
+    color: aliceblue;
+    background-origin: 5%;
+}
+/*CLAVE VALOR PARA LA EMPTY LIST QUE ESTA OCULTA (DATOS DE USER CONSULTADO)*/
+#emptyList{
+    color: rgb(49, 46, 212);
+    font-style: normal;
+    width: 90%;
+    font-size: 1rem;
+}
+/*CLAVES VALOR PARA LAS COOKIES (RECUADRO NEGRO CON INFORMACION)*/
+#cookies{
+    background-color: rgb(10, 10, 10);
+    font-size: medium;
+    color: rgb(218, 123, 0);
+    border-radius: 30px;
+    border-color: brown;
+    border-style: solid;
+}
+/*CLAVE VALOR PARA EL BOTON DEL RECUADRO DE COOKIES (BOTON VERDE)*/
+#acceptText{
+    background-color:rgb(14, 148, 2);
+    color: aliceblue;
+}
+/*CLAVE VALOR PARA EL NOMBRE EN LAS COOKIES (AUTOR)*/
+#authorName{
+    color: rgb(255, 0, 0);
+}
+/*CLAVE VALOR PARA UN FONDO VERDE CLARO*/
+.greenLigthBackground{
+    background-color: rgb(110, 167, 110);
+}
+/*CLAVE VALOR PARA EL DIC OCULTO (DATOS DE USUARIO)*/
+#emptyDiv{
+    float: right;
+    margin-top: 5%;
+    position: fixed;
+    width: 30%;
+}
+/*CLAVE VALOR PARA LOS LOGOS (IMAGENES CON DAVID MF AL RPINCIPIO Y FIN)*/
+#logoImg{
+    position: center;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+/*CLAVE VALOR PARA LAS FLECHAS ANIMADAS*/
+#arrowOne{
+    transform: rotate(90deg);
+    margin-bottom: -10px;
+}
+/*CLAVE VALOR PARA EL SIZE MINIMO DE LOS DIV CONTENEDORES DE LAS FLECHAS ANIMADAS*/
+.minSize{
+    min-width: 293px;
+}
